@@ -1,0 +1,803 @@
+
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template, Fund, Charity, Poverty, Help, Non profit, Money, Poor, Aid, html5, css, epidemic, pestilence" />
+<meta name="author" content="web24service">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>{% trans 'Fund For Aid - Fund For Nonprofit Charity Hope Orphen HTML5 Template' %}</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="{% static 'images/fevicon1.png' %}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+<!-- Font awesome CSS -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+<!-- OwlCarousel CSS -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+
+<!-- Magnific popup CSS -->
+<link rel="stylesheet" href="{% static 'css/fancybox.min.css' %}">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+
+</head>
+<body>
+<div class="main-wrapper">
+
+<!-- Preloader start -->
+  <div class="site-preloader-wrapper">
+   <div class="preloader-block"> 
+     <div class="logo"> <a href="index.html" title="Fund For Aid">Fund For Aid</a> </div>
+     <div class="bar"></div>
+   </div>  
+  </div>
+<!-- Preloader End -->
+
+ <header class="for-sticky"> 
+    <!-- Header area start -->
+    <div class="container-fluid">
+      <div class="header-block"> 
+        <!-- Site logo Start -->
+        <div class="logo"> <a href="index.html" title="{% trans 'Fund For Aid' %}">{% trans 'Fund For Aid' %}</a> </div>
+        <!-- Site logo end --> 
+        
+        <!-- Main menu start -->
+        <nav class="mainmenu home-nav">
+          <ul id="navigation">
+              <li class="nav-active"><a href="#home" title="{% trans 'Home' %}">{% trans 'Home' %}</a></li>
+              <li><a href="#about-us" title="{% trans 'About Us' %}">{% trans 'About Us' %}</a></li>
+              <li><a href="#other-causes" title="{% trans 'Causes' %}">{% trans 'Causes' %}</a></li>
+              <li><a href="#volunteer" title="{% trans 'Volunteer' %}">{% trans 'Volunteer' %}</a></li>
+              <li><a href="#news" title="{% trans 'News & Events' %}">{% trans 'News & Events' %}</a></li>
+              <li><a href="#inspire" title="{% trans 'Who Inspire Us' %}">{% trans 'Who Inspire Us' %}</a></li>
+              <li><a href="#gallery" title="{% trans 'Gallery' %}">{% trans 'Gallery' %}</a></li>
+              <li><a href="#contact" title="{% trans 'Contact' %}">{% trans 'Contact' %}</a></li>
+              <li><a href="#" title="{% trans 'Pages' %}">{% trans 'Pages' %}</a>
+                  <ul>
+                      <li><a href="index.html" title="{% trans 'Home with color 1' %}">{% trans 'Home with color 1' %}</a></li>
+                      <li><a href="home-slider-color-2.html" title="{% trans 'Home Slider with color 2' %}">{% trans 'Home Slider with color 2' %}</a></li>
+                      <li><a href="bg-video-color-3.html" title="{% trans 'Home bg video with color 3' %}">{% trans 'Home bg video with color 3' %}</a></li>
+                      <li><a href="rtl-version-color-4.html" title="{% trans 'RTL Version with color 4' %}">{% trans 'RTL Version with color 4' %}</a></li>
+                      <li><a href="gallery.html" title="{% trans 'Gallery page' %}">{% trans 'Gallery page' %}</a></li>
+                      <li><a href="cause-details-donate.html" title="{% trans 'Cause Details with donate' %}">{% trans 'Cause Details with donate' %}</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+        <!-- Main menu end -->
+        <div class="header-login-link">
+          <ul>
+              <li>
+                  <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img src="{% static 'images/flag-1.png' %}" alt=""/> {{ LANGUAGE_CODE|upper }}
+                  </a>
+                  <ul class="dropdown-menu">
+                      <!-- EN diline geçiş için bağlantı -->
+                      <li>
+                          <a href="{% url 'set_language' 'en' %}">
+                              <img src="{% static 'images/flag-1.png' %}"  alt=""/> EN
+                          </a>
+                      </li>
+                      <!-- AZ diline geçiş için bağlantı -->
+                      <li>
+                          <a href="{% url 'set_language' 'az' %}">
+                              <img src="{% static 'images/flag-2.png' %}" alt=""/> AZ
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      
+        <div class="header-button"><a href="cause-details-donate.html" title="">Donate</a></div>
+        <div class="mobile-menu-wrapper home-nav"></div>
+      </div>
+    </div>
+    <!-- Header area End --> 
+  </header>
+  
+<!-- Slider Start -->
+<section id="home">
+  <div class="homepage-slides-wrapper">
+    <div class="single-banner black-font"> 
+      <!-- Slider item1 start-->
+      <div class="single-slide-item single-banner-bg">
+        <div class="item-table">
+          <div class="item-tablecell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10">
+                  <h2>Considering <br>
+                    your samll contribution</h2>
+                  <h3>Make the world more Beautiful and Liveable for every person.</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider item1 end--> 
+    </div>
+  </div>
+  <div class="featured-fund-sec">
+    <div class="container">
+      <div class="featured-fund">
+        <div class="featured-fund-left">
+          <div class="featured-fund-raise">
+            <div class="featured-fund-raise-block">
+              <div class="progress show-raised-percent">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+              </div>
+              <div class="raise-total"><span><b>$4000</b> raised</span> <span>of <b>$5000</b></span></div>
+              <div class="text-center mt-2"><a href="cause-details-donate.html" title="" class="main-btn feature-main-btn">Donate Now</a></div>
+            </div>
+          </div>
+          <div class="featured-fund-end">
+            <div class="timer">
+              <div class="days"></div>
+              <div class="hours"></div>
+              <div class="minutes"></div>
+              <div class="seconds"></div>
+              <input type="hidden" class="end_time" value="1 April 2021 9:56:00 GMT+01:00" />
+            </div>
+          </div>
+        </div>
+        <div class="featured-fund-right">
+          <h3>Fund collect for foodless people of pestilence time</h3>
+          <p>We have privided food successfully to 200 foodless people from our 1st collected fund and whice people are donated.</p>
+          <p>We are collecting fund 2nd time for 500 foodless family.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Slider End -->
+
+<section id="about-us"> 
+  <!-- Our Mission Start -->
+  <div class="page-content-block">
+    <div class="container">
+      <div class="row"> 
+        <!-- Factory Gallery start -->
+        <div class="col-12 col-lg-4">
+          <div class="mission-picture"> <img src="{% static 'images/mission-pic.jpg' %}" alt=""/>
+            <div class="video-block"> <a class="ico-video" href="https://www.youtube.com/watch?v=oytpJAVBkX8" data-fancybox><span></span></a> </div>
+          </div>
+        </div>
+        <!-- Factory gallery end -->
+        <div class="col-12 col-lg-7 offset-lg-1">
+          <div class="mission-text">
+            <h2 class="title-bottom-border">Our Mission</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Mission end --> 
+  
+  <!-- How we work Start -->
+  <div class="page-content-block how-we-work green-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 wow fadeInRight">
+          <h2 class="title-bottom-border">How do We work?</h2>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="how-work-block"> <span>01</span>
+                <h3>We target our causes</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Contrary to popular belief.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="how-work-block"> <span>02</span>
+                <h3>Fund collection start</h3>
+                <p>when an unknown printer took a galley of type and scrambled it to make. Lorem Ipsum is simply dummy text.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="how-work-block"> <span>03</span>
+                <h3>Buy food for poor falimy</h3>
+                <p> It was popularised in the 1960s with the release of Letraset sheets containing. when an unknown printer took.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="how-work-block"> <span>04</span>
+                <h3>Delivery to family</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It was popularised in the 1960s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- How we work end --> 
+</section>
+<section id="other-causes"> 
+  <!-- Other Causes start -->
+  <div class="page-content-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="section-title wow fadeInUp">
+            <h2>Upcoming Causes</h2>
+            <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="owl-carousel upcoming-causes">
+            {% for blog in blogs %}
+            <div class="causes-item wow fadeInUp">
+                <div class="causes-item-bg causes-img-1">
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                </div>
+                <div class="causes-content">
+                    <h3><a href="{% url 'blog_detail' blog.slug %}" title="">{{ blog.title }}</a></h3>
+                    <p>{{ blog.content|truncatechars:100|safe }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Other Causes End --> 
+</section>
+<section id="volunteer"> 
+  <!-- Become Volunteer start -->
+  <div class="page-content-block become-volunteer" style="background-image: url('{% static 'images/become-volunteer-bg.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-6 wow fadeInRight">
+          <h2 class="title-bottom-border">BECOME A VOLUNTEER</h2>
+          <h6>we always will be happy if you join with us!</h6>
+          <div class="volunteer-form">
+            <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data">
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label>Full Name</label>
+                  <input type="text" class="form-control" placeholder="Full Name" required>
+                  <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> This field is required </span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12 col-sm-6">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                  <label>Mobile</label>
+                  <input type="text" class="form-control" placeholder="Mobile">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12 col-sm-6">
+                  <label>Gender</label>
+                  <select class="custom-select" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                  <label>Place</label>
+                  <select class="custom-select" name="place">
+                    <option value="Otario">Otario</option>
+                    <option value="Toranto">Toranto</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label>Message</label>
+                  <textarea class="form-control text-area" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label>Upload CV</label>
+                  <input type="file" name="img[]" class="inputfile">
+                  <div class="input-group"> <span class="input-file-addon"><i class="fas fa-file-upload"></i></span>
+                    <input type="text" class="form-control input-file-text" disabled placeholder="Upload Image">
+                    <span class="input-file-btn">
+                    <button class="browse btn input-file-button" type="button"><i class="fas fa-search"></i> Browse</button>
+                    </span> </div>
+                  <p>Max upload size: 10MB</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <button class="main-btn" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Become Volunteer end --> 
+  
+  <!-- Our Volunteer start -->
+  <div class="page-content-block meet-the-volunteer">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="section-title wow fadeInUp">
+            <h2>Our Volunteer</h2>
+            <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="owl-carousel volunteer-section">
+          <div class="volunteer-item">
+            <div class="volunteer-block">
+              <div class="volunteer-image"> <img src="{% static 'images/volunteer-1.jpg' %}" alt=""/>
+                <div class="volunteer-figure">
+                  <div class="item-table">
+                    <div class="item-tablecell"> <a href="#" title=""><i class="fab fa-facebook-f"></i></a> <a href="#" title=""><i class="fab fa-twitter"></i></a> <a href="#" title=""><i class="fab fa-skype"></i></a> <a href="#" title=""><i class="fab fa-linkedin"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-text">
+                <h5>Volunteer Name 1</h5>
+                <p>Managing Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-item">
+            <div class="volunteer-block">
+              <div class="volunteer-image"> <img src="{% static 'images/volunteer-2.jpg' %}" alt=""/>
+                <div class="volunteer-figure">
+                  <div class="item-table">
+                    <div class="item-tablecell"> <a href="#" title=""><i class="fab fa-facebook-f"></i></a> <a href="#" title=""><i class="fab fa-twitter"></i></a> <a href="#" title=""><i class="fab fa-skype"></i></a> <a href="#" title=""><i class="fab fa-linkedin"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-text">
+                <h5>Volunteer Name 2</h5>
+                <p>Site Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-item">
+            <div class="volunteer-block">
+              <div class="volunteer-image"> <img src="{% static 'images/volunteer-3.jpg' %}" alt=""/>
+                <div class="volunteer-figure">
+                  <div class="item-table">
+                    <div class="item-tablecell"> <a href="#" title=""><i class="fab fa-facebook-f"></i></a> <a href="#" title=""><i class="fab fa-twitter"></i></a> <a href="#" title=""><i class="fab fa-skype"></i></a> <a href="#" title=""><i class="fab fa-linkedin"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-text">
+                <h5>Volunteer Name 3</h5>
+                <p>Sr. Volunteer</p>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-item">
+            <div class="volunteer-block">
+              <div class="volunteer-image"> <img src="{% static 'images/volunteer-4.jpg' %}" alt=""/>
+                <div class="volunteer-figure">
+                  <div class="item-table">
+                    <div class="item-tablecell"> <a href="#" title=""><i class="fab fa-facebook-f"></i></a> <a href="#" title=""><i class="fab fa-twitter"></i></a> <a href="#" title=""><i class="fab fa-skype"></i></a> <a href="#" title=""><i class="fab fa-linkedin"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-text">
+                <h5>Volunteer Name 4</h5>
+                <p>Testing Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-item">
+            <div class="volunteer-block">
+              <div class="volunteer-image"> <img src="{% static 'images/volunteer-5.jpg' %}" alt=""/>
+                <div class="volunteer-figure">
+                  <div class="item-table">
+                    <div class="item-tablecell"> <a href="#" title=""><i class="fab fa-facebook-f"></i></a> <a href="#" title=""><i class="fab fa-twitter"></i></a> <a href="#" title=""><i class="fab fa-skype"></i></a> <a href="#" title=""><i class="fab fa-linkedin"></i></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-text">
+                <h5>Volunteer Name 5</h5>
+                <p>Junior Volunteer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Volunteer end --> 
+</section>
+<section id="news"> 
+  <!-- News Start -->
+  <div class="page-content-block news-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="news-block-section">
+            <h2 class="title-bottom-border">Upcoming Events</h2>
+            <div class="owl-carousel news-carousel">
+              <div class="news-item">
+                <div class="news-date">
+                  <div class="news-date-holder"><strong>20</strong><span>April</span></div>
+                </div>
+                <h3>Free food distribution to foodless people</h3>
+                <div class="news-status">
+                  <ul>
+                    <li><i class="far fa-clock"></i> 8:30 AM - 10:00 AM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Lake park, Italy</li>
+                  </ul>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="news-contact">
+                  <div class="news-contact-block">
+                    <ul>
+                      <li><i class="fas fa-phone"></i> +1 2375 987</li>
+                      <li><i class="far fa-envelope"></i> help@domainname.com</li>
+                    </ul>
+                  </div>
+                  <div class="news-contact-map"> <a href="#" title=""><i class="fas fa-map-marked-alt"></i> View Map</a> </div>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-date">
+                  <div class="news-date-holder"><strong>18</strong><span>March</span></div>
+                </div>
+                <h3>Some Fund distribution to poor people</h3>
+                <div class="news-status">
+                  <ul>
+                    <li><i class="far fa-clock"></i> 9:30 AM - 11:00 AM</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Lake park, London</li>
+                  </ul>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="news-contact">
+                  <div class="news-contact-block">
+                    <ul>
+                      <li><i class="fas fa-phone"></i> +1 4875 342</li>
+                      <li><i class="far fa-envelope"></i> help@domainname.com</li>
+                    </ul>
+                  </div>
+                  <div class="news-contact-map"> <a href="#" title=""><i class="fas fa-map-marked-alt"></i> View Map</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 offset-lg-1">
+          <div class="newsletter">
+            <div class="newsletter-block">
+              <form action="https://web24service.com/work/themeforest/fund-for-aid/index.php">
+                <h2>Newsletter</h2>
+                <p>Sign up for our monthly newsletter to get the latest news, volunteer opportunities.</p>
+                <input type="text" placeholder="Enter your email" value="" class="news-input">
+                <button type="submit" value="" class="news-btn">Subscribe <i class="fa fa-location-arrow"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- News end --> 
+</section>
+<section id="inspire"> 
+  <!-- Testimonial Start -->
+  <div class="page-content-block testimonial-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="section-title wow fadeInUp">
+            <h2>Who Inspire Us</h2>
+            <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 wow fadeInDown">
+          <div class="owl-carousel testimonial">
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>
+              <div class="testimonial-title">
+                <h5><img src="{% static 'images/team-member-1.jpg' %}" alt=""/> Jone Den <span>- MD, Bright Future</span></h5>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>
+              <div class="testimonial-title">
+                <h5><img src="{% static 'images/team-member-2.jpg' %}" alt=""/> Daren Sami <span>- CEO, Global IT</span></h5>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>
+              <div class="testimonial-title">
+                <h5><img src="{% static 'images/team-member-3.jpg' %}" alt=""/> Marbel <span>- CMO, Samsung</span></h5>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>
+              <div class="testimonial-title">
+                <h5><img src="{% static 'images/team-member-4.jpg' %}" alt=""/> Jessica <span>- IT officer, Mogolia</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial End --> 
+</section>
+
+<!-- Gallery Start -->
+<section id="gallery">
+  <div class="page-content-block our-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="section-title wow fadeInUp">
+            <h2>Recent Gallery</h2>
+            <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gallery-row">
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-3.jpg' %}" data-fancybox="images" data-caption="Gallery 3"><img src="{% static 'images/gallery-3.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 3</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-5.jpg' %}" data-fancybox="images" data-caption="Gallery 5"><img src="{% static 'images/gallery-5.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 5</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-1.jpg' %}" data-fancybox="images" data-caption="Gallery 1"><img src="{% static 'images/gallery-1.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 1</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-7.jpg' %}" data-fancybox="images" data-caption="Gallery 7"><img src="{% static 'images/gallery-7.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 7</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-4.jpg' %}" data-fancybox="images" data-caption="Gallery 4"><img src="{% static 'images/gallery-4.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 4</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-2.jpg' %}" data-fancybox="images" data-caption="Gallery 2"><img src="{% static 'images/gallery-2.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 2</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'images/gallery-9.jpg' %}" data-fancybox="images" data-caption="Gallery 9"><img src="{% static 'images/gallery-9.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Gallery 9</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/cause-education.jpg' %}" data-fancybox="images" data-caption="Fund for poor education"><img src="{% static 'images/cause-education.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Fund for poor education</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/cause-foodless.jpg' %}" data-fancybox="images" data-caption="Aid for foodless family"><img src="{% static 'images/cause-foodless.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Aid for foodless family</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/cause-homeless.jpg' %}" data-fancybox="images" data-caption="Help for homeless people"><img src="{% static 'images/cause-homeless.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Help for homeless people</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+        <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'images/cause-medical-camp.jpg' %}" data-fancybox="images" data-caption="Fund for helth camp"><img src="{% static 'images/cause-medical-camp.jpg' %}" alt=""/>
+          <div class="gallery-text">
+            <div class="gallery-text-block">
+              <h4>Fund for helth camp</h4>
+              <span>Recent Gllery</span> </div>
+          </div>
+          </a> </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-5"> <a href="gallery.html" title="" class="main-btn">View Gallery</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Gallery End --> 
+
+<!-- Contact Section Start -->
+<section id="contact"> 
+  <!-- Contact Form Start -->
+  <div class="page-content-block contact-form-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="section-title wow fadeInUp">
+            <h2>Contact With Us</h2>
+            <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="contact-form">
+            <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data">
+              <div class="row">
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" value="" placeholder="Your Full Name" required/>
+                  <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> This field is required </span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-12">
+                  <input type="email" class="form-control" value="" placeholder="Email"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" value="" placeholder="Phone Number"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-12">
+                  <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-12 text-right">
+                  <button type="submit" class="main-btn mt-0">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+          <div class="address">
+            <h2 class="title-bottom-border">Our Address</h2>
+            <div class="address-block">
+              <ul>
+                <li class="address-icon"><strong>Adderss:</strong><br>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li class="phone-icon"><strong>Telephone No:</strong><br>
+                  +88 01911 837404</li>
+                <li class="fax-icon"><strong>Fax No:</strong><br>
+                  +88 01911 837404</li>
+                <li class="email-icon"><strong>Email:</strong><br>
+                  <a href="mailto:info@hplus.world" title="">info@web24service.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Form End --> 
+</section>
+<!-- Contact Section End -->
+
+
+ <!-- Footer start -->
+<footer class="site-footer"> 
+  <!-- Footer Top start -->
+  <div class="footer-top-area">
+    <div class="container">
+      <div class="row flex-lg-row-reverse">
+        <div class="col-12 col-lg-9">
+          <div class="counter-block">
+            <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'images/supporter-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="340">0</span><span>M</span>
+              <h5>Numbers of supporters</h5>
+            </div>
+            <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'images/volunteer-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="85">0</span><span>K</span>
+              <h5>Volunteers Connected</h5>
+            </div>
+            <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'images/complete-project-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="67">0</span><span>K</span>
+              <h5>Causes Completed</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="social-block">
+            <h4>Connect with us</h4>
+            <div class="bottom-social"> <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a> <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a> <a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a> <a href="#"><i class="fa fa-rss"></i><span>LinkedIn</span></a> </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- footer top end --> 
+  
+  <!-- copyright start -->
+  <div class="footer-bottom-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 wow fadeInLeft">&copy; 2020 <span>Fund For Aid</span>.All Rights Reserved</div>
+        <div class="col-12 col-md-6 text-right wow fadeInRight">Design & Development By: <a href="http://web24service.com/" title="web24service" target="_blank">web24service</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright end --> 
+</footer>
+<!-- Footer end --> 
+</div>
+<!-- Main Wrapper end -->
+
+<div class="scrollup"><i class="fa fa-angle-up"></i></div>
+<!-- Footer end -->    
+
+
+
+<!-- Active JS --> 
+<script src="{% static 'js/main-js.js' %}"></script>
+<!-- filterizr Scroll JS --> 
+
+
+
+</body>
+</html>

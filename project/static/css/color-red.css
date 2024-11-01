@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.logo a {
+	background-image:url(../images/logo-red-white.png);
+}
+.site-preloader-wrapper:before, .site-preloader-wrapper:after {
+	background: #293172;
+}
+.preloader-block .bar {
+    background-color: #f2ffdc;
+}
+@keyframes loadingJ {
+  0%,100% {transform: translate(0,0);}
+  
+  50% {
+      transform: translate(150px,0);
+      background-color: #f8485d;
+      width:30px;
+  }
+}
+
+.mainmenu ul li.nav-active > a, .header-login-link ul li a:hover, .mainmenu > ul > li:hover > a, .single-slide-item h3, .timer > div, .featured-fund-raise-block .show-raised-percent span, .raise-total span b, .upcoming-causes .owl-nav button.owl-prev, .upcoming-causes .owl-nav button.owl-next, .become-volunteer h6, .title-border span .fas, .news-status ul li i, .news-contact-block ul li i, .news-contact-map a i, .news-contact-map a:hover, .news-contact-block ul li a:hover, .address-block ul li:before, .address-block ul li b, .address-block ul li strong, .footer-bottom-area span, .footer-bottom-area a, .page-breadcroumb, .donor-ount span b, .donation-amount > div, .comment-group h6, .comment-group a, .total-payment, .thank-you h3, .causes-left h6, .causes-content h3 a{color: #f8485d;}
+.mainmenu > ul > li > a:before, .header-button a, .mainmenu ul li ul > li:hover > a, .main-btn, .progress-bar, .green-bg, h2.title-bottom-border:before, h3.title-bottom-border:before, .input-file-button, .news-date-holder span, .news-sec:after, .news-carousel .owl-dots .owl-dot.active, .testimonial-content, .testimonial .owl-dots .owl-dot.active, .volunteer-section .owl-dots .owl-dot.active, .footer-top-area, input[type="radio"].css-checkbox:checked + label.css-label, input[type="radio"].css-paymentCheck:checked + label.css-labelPayment, .volunteer-figure a, .slicknav_nav li.nav-active > a, .slicknav_menu .slicknav_icon-bar, .slicknav_nav li:hover a, .slicknav_nav li:hover .slicknav_row{background-color: #f8485d;}
+ .upcoming-causes .owl-nav button:hover{background-color: #f8485d;color:#fff;}
+.news-date-holder, .news-contact-block, .donor-ount a.share-btn, input[type="radio"].css-checkbox:checked + label.css-label, .comment-sec .title-with-bg, .slicknav_btn{border-color: #f8485d;}
+.main-btn:hover, .header-button a:hover{background-color: #c62236;}
+.feature-main-btn{background-color:#fff;color: #f8485d;}
+.featured-fund-raise:before, .video-block, .homepage-slides .owl-nav button:hover, .scrollup:hover{background-color: rgba(248,72,93,0.9);}
+.featured-fund-raise-block .progress, .newsletter .news-btn, .counter-holder span.counter-icon, .bottom-social a{background-color:#cc3648;}
+.testimonial-content:before{color:#cc3648;}
+.testimonial-content:after{border-top-color:#f8485d;}
+.timer > div span{color:#222;}
+.ico-video:after, .input-file-button:hover{background-color:#d52e42;}
+.ico-video:hover:after {
+  background-color: #ba192c;
+}
+.ico-video:before{background-color:#ea1c34;}
+
+@media only screen and (max-width: 991px) {
+.header-block .logo a{background-image:url(../images/logo-red.png);}
+.social-block{border-top-color:#ffabb5;}
+}
+
+
+
+
+
+
+
+
+
+
+

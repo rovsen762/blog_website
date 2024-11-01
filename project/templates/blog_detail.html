@@ -1,0 +1,218 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template, Fund, Charity, Poverty, Help, Non profit, Money, Poor, Aid, html5, css, epidemic, pestilence" />
+<meta name="author" content="web24service">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Fund For Aid - Fund For Nonprofit Charity Hope Orphen HTML5 Template</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="{% static 'images/fevicon1.png' %}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+<!-- Font awesome CSS -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+<!-- OwlCarousel CSS -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+
+<!-- Magnific popup CSS -->
+<link rel="stylesheet" href="{% static 'css/fancybox.min.css' %}">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+
+</head>
+<body>
+  <div class="main-wrapper">
+  
+   
+    <header class="for-sticky"> 
+      <!-- Header area start -->
+      <div class="container-fluid">
+        <div class="header-block"> 
+          <!-- Site logo Start -->
+          <div class="logo"> <a href="index.html" title="Fund For Aid">Fund For Aid</a> </div>
+          <!-- Site logo end --> 
+          
+          <!-- Main menu start -->
+          <nav class="mainmenu">
+            <ul id="navigation">
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="#" title="Causes">Causes</a>
+                <ul>
+                  <li><a href="cause-details-donate.html" title="Fund for poor education">Fund for poor education</a></li>
+                  <li><a href="cause-details-donate.html" title="Help for homeless people">Help for homeless people</a></li>
+                  <li><a href="cause-details-donate.html" title="Fund for helth camp">Fund for helth camp</a></li>
+                  <li><a href="cause-details-donate.html" title="Aid for foodless family">Aid for foodless family</a></li>
+                </ul>
+              </li>
+              <li class="nav-active"><a href="#gallery" title="Gallery">Gallery</a>
+               <ul>
+                  <li class="chaild-active"><a href="gallery.html" title="Gallery with foodless people">Gallery with foodless people</a></li>
+                  <li><a href="gallery.html" title="Gallery with homeless people">Gallery with homeless people</a></li>
+                  <li><a href="gallery.html" title="Gallery with medical camp">Gallery with medical camp</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="Pages">Pages</a>
+                <ul>
+                  <li><a href="index.html" title="Home with color 1">Home with color 1</a></li>
+                  <li><a href="home-slider-color-2.html" title="Home Slider with color 2">Home Slider with color 2</a></li>
+                  <li><a href="bg-video-color-3.html" title="Home bg video with color 3">Home bg video with color 3</a></li>
+                  <li><a href="rtl-version-color-4.html" title="RTL Version with color 4">RTL Version with color 4</a></li>
+                  <li><a href="gallery.html" title="Gallery page">Gallery page</a></li>
+                  <li><a href="cause-details-donate.html" title="Cause Details with donate">Cause Details with donate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- Main menu end -->
+          <div class="header-login-link">
+            <ul>
+                <li>
+                    <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/flag-1.png" alt=""/> {{ LANGUAGE_CODE|upper }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- EN diline geçiş için bağlantı -->
+                        <li>
+                            <a href="{% url 'set_language' 'en' %}">
+                                <img src="assets/images/flag-1.png" alt=""/> EN
+                            </a>
+                        </li>
+                        <!-- AZ diline geçiş için bağlantı -->
+                        <li>
+                            <a href="{% url 'set_language' 'az' %}">
+                                <img src="assets/images/flag-2.png" alt=""/> AZ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+          <div class="header-button"><a href="#" title="">Donate</a></div>
+          <div class="mobile-menu-wrapper"></div>
+        </div>
+      </div>
+      <!-- Header area End --> 
+    </header> 
+    
+  <!-- Breadcroumbs start -->
+    <div class="page-content-block page-breadcroumb inner-banner-bg-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Fund for poor education</h1>
+            <a href="index.html" title="Home">Home</a> / Fund for poor education </div>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcroumbs end --> 
+  
+  <!-- Cause Details start -->
+  <div class="page-content-block">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8"> 
+                <div class="causes-left text-center">
+                    <h2>{{ blog.title }}</h2>
+                    <h6>{{ blog.created_at|date:"d/m/Y H:i"}}</h6>
+                    <div class="image-container">
+                        <img src="{{ blog.image.url }}" alt="{{ blog.title }}" class="img-fluid"/>
+                    </div>
+                    <p>{{ blog.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Cause Details end -->
+
+  
+   <!-- Footer start -->
+  <footer class="site-footer"> 
+    
+    <!-- copyright start -->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 wow fadeInLeft">&copy; 2020 <span>Fund For Aid</span>.All Rights Reserved</div>
+          <div class="col-12 col-md-6 text-right wow fadeInRight">Design & Development By: <a href="http://web24service.com/" title="web24service" target="_blank">web24service</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright end --> 
+  </footer>
+  <!-- Footer end --> 
+</div>
+<!-- Main Wrapper end -->
+
+<div class="scrollup"><i class="fa fa-angle-up"></i></div>
+<!-- Footer end -->    
+  
+
+
+<!-- Active JS --> 
+<script src="{% static 'js/main-js.js' %}"></script>
+
+{% comment %} <script>
+  function setLanguageCookie(language) {
+      document.cookie = "language=" + language + "; path=/; max-age=" + 60 * 60 * 24 * 1;
+  }
+
+  function getLanguageCookie() {
+      const cookies = document.cookie.split("; ");
+      const languageCookie = cookies.find(cookie => cookie.startsWith("language="));
+      return languageCookie ? languageCookie.split("=")[1] : null;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+      const language = getLanguageCookie();
+      const languageLink = document.querySelector(".header-login-link > ul > li > a");
+
+      if (language === "Azerbaijan") {
+          languageLink.innerHTML = '<img src="assets/images/flag-2.png" alt=""/> AZ';
+      } else {
+          languageLink.innerHTML = '<img src="assets/images/flag-1.png" alt=""/> EN';
+      }
+
+      if (language === 'Azerbaijan' && !window.location.pathname.startsWith('/az')) {
+          window.location.href = "/az/";
+      } 
+      else if (language === 'English' && !window.location.pathname.startsWith('/en')) {
+          window.location.href = "/en/";
+      }
+  });
+
+  document.addEventListener("click", function(event) {
+      if (event.target.matches(".dropdown-menu a")) {
+          const selectedLanguage = event.target.textContent.trim() === "AZ" ? "Azerbaijan" : "English";
+          setLanguageCookie(selectedLanguage);
+      }
+  });
+</script> {% endcomment %}
+
+ 
+
+</body>
+</html>

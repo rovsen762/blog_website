@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* Medium Layout: 1280px. */
+@media (min-width: 992px) and (max-width: 5000px) {
+.sticky {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+}
+header.sticky:before {
+	opacity: .85;
+	transform: translateY(0);
+}
+}
+
+@media (min-width: 992px) and (max-width: 1180px) {
+.mainmenu ul li a {
+	padding: 23px 4px;
+}
+}
+
+/* Tablet Layout: 1024px. */
+@media (min-width:100px) and (max-width: 991px) {
+.mainmenu {
+	display: none;
+}
+.mobile-menu-wrapper {
+	display: block;
+}
+.header-login-link {
+	margin-left: auto;
+}
+.header-button a {
+	margin-left: 0px;
+}
+header {
+	position: relative;
+	background-color: #fff;
+}
+header:before {
+	opacity: .85;
+	transform: translateY(0);
+	background-color: #fff;
+}
+.header-block .logo a {
+	background-image: url(../images/logo-green.png);
+}
+.featured-fund {
+	flex-wrap: wrap;
+}
+.featured-fund-left {
+	width: 100%;
+}
+.featured-fund-right {
+	width: 100%;
+	padding: 15px 30px;
+}
+.mission-picture {
+	max-width: 480px;
+}
+.mission-text {
+	padding-top: 30px;
+}
+.how-we-work {
+	background-image: none;
+}
+.become-volunteer {
+	background-size: cover;
+}
+.become-volunteer:before {
+	width: 100%;
+}
+.news-sec:after {
+	height: 380px;
+	width: 100%;
+}
+.social-block {
+	border-right: 0px;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	border-top: 1px solid #e9ffc6;
+	margin-top: 30px;
+}
+.social-block h4 {
+	display: none;
+}
+.causes-right {
+	margin-bottom: 40px;
+}
+.page-breadcroumb {
+	padding: 80px 0px;
+}
+}
+
+/* Wide Mobile Layout: 480px. */
+@media (min-width: 100px) and (max-width: 767px) {
+.footer-bottom-area div {
+	text-align: center !important;
+}
+.address {
+	padding-top: 30px;
+}
+.section-title h2, .single-slide-item h2 {
+	font-size: 32px;
+}
+.single-banner:before {
+	height: 50px;
+	opacity: 0.4;
+}
+.single-slide-item h3 {
+	font-size: 18px;
+}
+.single-slide-item {
+	height: 420px;
+}
+}
+
+@media (min-width: 100px) and (max-width: 640px) {
+}
+
+@media (min-width: 100px) and (max-width: 580px) {
+.header-block {
+	flex-wrap: wrap;
+}
+.header-block .logo {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+.header-login-link {
+	order: 3;
+}
+.header-button {
+	order: 4;
+}
+.mobile-menu-wrapper {
+	padding-left: 0px;
+}
+.slicknav_nav {
+	left: 0px;
+	right: inherit;
+}
+.video-block {
+	right: 30px;
+}
+.featured-fund-left {
+	padding: 15px;
+	padding-bottom: 0px;
+}
+.featured-fund-raise {
+	margin: 0px;
+}
+.single-slide-item {
+	height: 360px;
+}
+.causes-right .featured-fund-raise {
+	width: auto;
+	margin: 15px;
+	margin-bottom: 0px;
+}
+.comment-group, .reply-comment {
+	padding: 75px 0px 15px 0px;
+}
+.comment-img img {
+	max-width: 50px;
+}
+.page-breadcroumb {
+	background-position: -100px center;
+}
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+.counter-block {
+	flex-wrap: wrap;
+}
+.counter-holder {
+	width: 100%;
+	padding: 15px 0px;
+}
+.quick-donation {
+	flex-wrap: wrap;
+}
+}
+
+@media (min-width: 100px) and (max-width: 380px) {
+}
