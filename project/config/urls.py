@@ -23,6 +23,7 @@ from django.conf.urls.i18n import i18n_patterns
 from pages.views import set_language
 from .admin import admin_site 
 
+
 from django.conf.urls import handler404 
 
 from pages.views import error_404_handler
@@ -44,7 +45,9 @@ urlpatterns += i18n_patterns(
     prefix_default_language=True,
 ) 
 
-urlpatterns += static(settings.STATIC_URL,
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,
                           document_root=settings.STATIC_ROOT)
-urlpatterns += static(settings.MEDIA_URL,
+    urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+

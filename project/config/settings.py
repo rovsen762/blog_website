@@ -33,15 +33,18 @@ load_dotenv(dotenv_path)
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+DEBUG = False
+#ALLOWED_HOSTS = ['*']
 
-# ALLOWED_HOSTS = [
-#     'www.victoriamur.com',
-#     'victoriamur.com',
-#     '167.71.10.31'
-# ]
+ALLOWED_HOSTS = [
+    'www.voluntas.studio',
+    'voluntas.studio',
+    '20.79.170.177',
+    'localhost',
+    '127.0.0.1'
+]
+
 
 
 
@@ -67,15 +70,15 @@ INSTALLED_APPS = [
 ]
 
 
-# CSRF_TRUSTED_ORIGINS = [
-#     'https://www.victoriamur.com',
-#     'https://victoriamur.com',
-#     'http://localhost',
-#     'http://127.0.0.1',
-#     'http://167.71.10.31', 
-#     'https://167.71.10.31'
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.voluntas.com',
+    'https://voluntas.com',
+    'http://localhost',
+    'http://127.0.0.1',
+    'http://20.79.170.177', 
+    'https://20.79.170.177'
 
-# ]
+]
 
 
 
@@ -94,7 +97,8 @@ INSTALLED_APPS = [
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 
@@ -201,22 +205,22 @@ LOCALE_PATHS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "apps-static",
-# ]
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR / 'static/'
-
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = BASE_DIR / 'media/'
-
+STATICFILES_DIRS = [
+    BASE_DIR / "apps-static",
+]
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = BASE_DIR / 'static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+
+# STATIC_URL = 'static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media/'
 
 
 # Default primary key field type

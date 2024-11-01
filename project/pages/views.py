@@ -1,32 +1,4 @@
 
-
-# def index(request):
-#     language = request.COOKIES.get('selected_language', 'Azerbaijan')
-#     blogs = Blog.objects.filter(language=language).order_by('-created_at')[:6]
-
-#     if request.method == 'POST':
-#         form = ContactForm(request.POST)
-#         if form.is_valid():
-#             form.save()  
-#             form = ContactForm() 
-#     else:
-#         form = ContactForm() 
-
-#     context = {
-#         'blogs': blogs,
-#         'form': form,
-#         'selected_language': language,
-#     }
-    
-#     response = render(request, 'index.html', context)
-#     if 'selected_language' not in request.COOKIES:
-#         response.set_cookie('selected_language', 'Azerbaijan')
-#     if 'selected_language' in request.GET:
-#         response.set_cookie('selected_language', request.GET['selected_language'])
-        
-    
-#     return response
-
 from blog.models import Blog
 from django.shortcuts import redirect,render
 from django.utils import translation
